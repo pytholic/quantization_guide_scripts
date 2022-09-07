@@ -29,7 +29,7 @@ quant_model.load_state_dict(state_dict, strict=False)
 quant_model.eval()
 ```
 
-2. Use jit.save and jit.load
+2. Use `jit.save` and `jit.load`
 
 ```python3
 torch.jit.save(torch.jit.script(model_static_quantized), "./model/quantized_test.pt")
